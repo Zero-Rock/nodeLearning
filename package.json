@@ -1,0 +1,25 @@
+{
+    "name": "nod-learning",
+    "version": "1.0.0",
+    "description": "node learning files",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kivamobius/nodeLearning.git"
+    },
+    "keywords": [
+        "node"
+    ],
+    "author": "mobius",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kivamobius/nodeLearning/issues"
+    },
+    "homepage": "https://github.com/kivamobius/nodeLearning#readme",
+    "dependencies": {
+        "express": "^4.15.4"
+    }
+}
