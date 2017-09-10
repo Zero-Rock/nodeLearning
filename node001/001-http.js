@@ -8,7 +8,7 @@ http.createServer((req, res) => {
         'Content-Type': 'json;charset=utf-8'
     });
     //设置响应内容
-    res.write("<p>你好,乔安</p>");
+    res.write("<p>hello Node.Js</p>");
     //响应结束并返回内容
     res.end("mobius");
     console.log(15865);
