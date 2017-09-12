@@ -2,10 +2,11 @@
  * Created by Mobius on 2017/9/10 23:18.
  */
 const url = require("url");
-const urlString = "http://user:password@www.baidu.com:8080/a/b?c=d&e=ff#abc";
+const urlString = "http://user:password@www.baidu.com:8080/a/b?c=123&e=mobiua&age=23#1505219048356";
+const urlString1 = "http://user:password@www.baidu.com:8080/a/b?c=123&e=mobiua&age=23#1505219048356";
+const urlObj = new url.Url('https://user:pass@sub.host.com:8080/p/a/t/h?query=string#hash')
 const obj = url.parse(urlString, true);
-console.log(url.parse(urlString, true));
-console.log(obj);
+console.log(urlObj);
 console.log(obj.protocol);//协议
 console.log(obj.slashes);//协议后是否有双斜杠
 console.log(obj.auth);//授权认证
