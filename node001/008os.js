@@ -17,3 +17,4 @@ console.log(os.arch());
  *      irq <number> CPU花费在中断请求模式下的毫秒时间数.
  */
 console.log(os.cpus())
+console.log(os.endianness())
