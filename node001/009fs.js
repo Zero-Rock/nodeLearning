@@ -3,9 +3,9 @@
  */
 const fs = require("fs");
 const path = require("path");
-const _path1 = path.resolve(__dirname,"user.txt");
-const _path2 = path.resolve(__dirname,"user2.txt");
-console.log(_path2)
+const _path1 = path.resolve(__dirname,"../test/user.txt");
+const _path2 = path.resolve(__dirname,"../test/user2.txt");
+console.log(_path1)
 /**
  * 异步读取文件
  * fs.readFile(path[, options], callback)
