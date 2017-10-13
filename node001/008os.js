@@ -37,3 +37,4 @@ console.log(os.loadavg());
  * scopeid <number> IPv6 数字领域识别码 (只有当 family 是IPv6时可用)
  */
 console.log(os.networkInterfaces());
+console.log(os.endianness())
