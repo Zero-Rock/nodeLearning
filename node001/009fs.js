@@ -32,4 +32,3 @@ fs.readlink(_path2,(e,d)=>{
     }
     console.log(d)
 });
-console.log(1234)
