@@ -2,12 +2,16 @@
  * Created by Mobius on 2017/9/28 23:10.
  */
 const fs = require("fs");
+const path = require("path");
+const _path1 = path.resolve(__dirname,"user.txt");
+const _path2 = path.resolve(__dirname,"user2.txt");
+console.log(_path2)
 /**
  * 异步读取文件
  * fs.readFile(path[, options], callback)
  * 若不指定编码，则返回buffer对象
  */
-fs.readFile("../test/user.txt", "UTF-8", (error, data) => {
+fs.readFile(_path1, "UTF-8", (error, data) => {
     if (error) {
         console.log(error);
     }
@@ -19,9 +23,9 @@ console.log("complate");
  * fs.readFileSync(path[, options])
  * 若不指定编码，则返回buffer对象
  */
-const data = fs.readFileSync("../test/user2.txt", "utf-8");
+const data = fs.readFileSync(_path2, "utf-8");
 console.log(data);
-fs.readlink("../test/user.txt",(e,d)=>{
+fs.readlink(_path2,(e,d)=>{
     if (e){
         console.log(e);
         return ;
