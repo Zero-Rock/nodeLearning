@@ -28,3 +28,4 @@ fs.readlink("../test/user.txt",(e,d)=>{
     }
     console.log(d)
 });
+console.log(1234)
