@@ -34,7 +34,7 @@ build/Release
 
 # Dependency directories
 node_modules/
-test/
+# test/
 jspm_packages/
 .idea
 
@@ -61,3 +61,4 @@ typings/
 
 
 /test/
+!/test/
