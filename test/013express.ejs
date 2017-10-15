@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>欢迎光临😍😍</h1>
+<h1>姓名:<%= name %></h1>
+<h1>性别:<%= gender %></h1>
+<h1>年龄:<%= age %></h1>
+<pre>
+    <span style="color: red">&lt;%  %&gt;</span> 用于控制流
+    <span style="color: red">&lt;%= %&gt;</span> 用于转义的输出
+    <span style="color: red">&lt;%- %&gt;</span> 用于非转义的输出
+    <span style="color: red">-%&gt;</span> 结束标签用于换行移除模式
+    带有<span style="color: red">&lt;%_ _%&gt;</span>的控制流使用空白字符移除模式
+    自定义分隔符 (例如，使用 '<span style="color: red">&lt;? ?&gt;</span>' 代替 <span style="color: red">'&lt;% %&gt;</span>')
+</pre>
+<div data-json="<%= JSON.stringify(list) %>">
+    <ul data-total="<%= list.total %>">
+        <% list.subjects.forEach((item, index)=>{ %>
+        <li data-id="<%= item.id %>" title="<%= item.title %>">
+            <img src="<%= item.images.large %>" alt="">
+        </li>
+        <% }); %>
+    </ul>
+</div>
+</body>
+</html>
