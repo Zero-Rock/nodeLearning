@@ -36,7 +36,7 @@ build/Release
 node_modules/
 test/
 jspm_packages/
-.idea
+.idea/
 
 # Typescript v1 declaration files
 typings/
