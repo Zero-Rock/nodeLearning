@@ -8,7 +8,7 @@
 let name;
 
 //以下方法只能在模块内使用
-let setname = (aname) => {
+let setname = ( aname ) => {
     name = aname;
 };
 
@@ -24,8 +24,9 @@ let getname = () => {
  * 3.在其他文件中可以通过require来获取exports对象
  *
  */
+exports.name = "mobius";
 exports.age = 10;
-exports.setAge = (aAge) => {
+exports.setAge = ( aAge ) => {
     this.age = aAge;
 };
 exports.getAge = () => {
