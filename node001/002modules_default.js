@@ -8,7 +8,7 @@ const person = {
     name: "mobius",
     age: 24,
 }
-exports.modules = {
+exports.module = {
     fun,
     person
 }
