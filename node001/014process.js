@@ -7,3 +7,5 @@
 console.log(process.argv)
 //
 console.log(process.execPath)
+const name = "mobius";
+console.log(name)
