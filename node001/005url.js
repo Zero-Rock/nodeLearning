@@ -17,5 +17,5 @@ console.log(obj.hash);//锚点名称,#abc
 console.log(obj.search);//查询的内容(以问号开头),?c=d&e=ff
 console.log(obj.query);//查询内容(不包括问号),c=d&e=ff,当parse的第二个参数为true时,会将query解析为对象
 console.log(obj.pathname);//路径名,/a/b
-console.log(obj.path);//把pathname和search拼接起来
-console.log(obj.href);//完整的地址
+console.info(obj.path);//把pathname和search拼接起来
+console.info(obj.href);//完整的地址
