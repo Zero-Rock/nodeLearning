@@ -10,7 +10,7 @@ const _path2 = path.resolve( __dirname, "../test/user2.txt" );
  * fs.readFile(path[, options], callback)
  * 若不指定编码，则返回buffer对象
  */
-fs.readFile( _path1, "UTF-8", ( error, data ) => {
+fs.readFile( _path2, "UTF-8", ( error, data ) => {
   if (error) {
     console.log( error );
   }
@@ -22,12 +22,6 @@ console.log( "complate" );
  * fs.readFileSync(path[, options])
  * 若不指定编码，则返回buffer对象
  */
-const data = fs.readFileSync( _path2, "utf-8" );
+const data = fs.readFileSync( _path1, "utf-8" );
 console.log( data );
-fs.readlink( _path2, ( e, d ) => {
-  if (e) {
-    console.log( e );
-    return;
-  }
-  console.log( d );
-} );
+const filesPath = path.resolve(__dirname,)
