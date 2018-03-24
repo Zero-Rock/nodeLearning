@@ -12,4 +12,10 @@ fs.readFile( keyMap, ( error, data ) => {
   }
   console.log( data.toString( "utf16le" ) );
 } );
+class TEST {
+  constructor() {
+
+  }
+}
+const a = new TEST()
 
