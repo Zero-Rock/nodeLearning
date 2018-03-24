@@ -4,12 +4,11 @@
 const fs = require( "fs" );
 const path = require( "path" );
 const stream = require( "stream" );
-const keyMap = path.resolve( __dirname, "../test/keyMap.pdf" );
-fs.readFile( keyMap, ( error, data ) => {
+const keyMap = path.resolve( __dirname, "../test/user2.txt" );
+fs.readFile( keyMap, "UTF-8", ( error, data ) => {
   if (error) {
     console.error( `[ERROR]--------------------${error}` );
     return;
   }
-  console.log( data.toString( "utf16le" ) );
+  console.log( data );
 } );
-
