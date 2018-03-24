@@ -3,7 +3,6 @@
  */
 const fs = require( "fs" );
 const path = require( "path" );
-
 const keyMap = path.resolve( __dirname, "../test/user2.txt" );
 fs.readFile( keyMap, "UTF-8", ( error, data ) => {
   if (error) {
