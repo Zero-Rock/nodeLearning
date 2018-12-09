@@ -23,6 +23,7 @@
     "chalk": "^2.3.2",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
-    "mongoose": "^5.0.12"
+    "mongoose": "^5.0.12",
+    "string.prototype.padstart": "^3.0.0"
   }
 }
