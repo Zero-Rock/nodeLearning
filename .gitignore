@@ -61,3 +61,4 @@ typings/
 
 
 /test/
+yarn.lock
