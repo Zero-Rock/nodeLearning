@@ -6,7 +6,10 @@ const mongoose = require( "mongoose" );
 const schema = new mongoose.Schema( {
   title: { type: String },
   soure: { type: String },
-  thumb: { type: String }
+  thumb: { type: String },
+  author: {type: String},
+  updateAt: {type: Date},
+  createAt: {type: Date}
 }, {
   collection: "book"
 } );
@@ -24,6 +27,6 @@ const bookModel = mongoose.model( "book", schema );
 //   console.log(result)
 // });
 
-bookModel.find( { title: /JavaScript/ } ).where( "title" ).in( [ "你不知道的 JavaScript(上)", "你不知道的 JavaScript(中)", "你不知道的 JavaScript(下)" ] ).select( "title thumb" ).limit( 200 ).sort( { thumb: 1 } ).exec( ( err, result ) => {
+bookModel.find( { title: /JavaScript/ } ).where( "title" ).in( [ "你不知道的 JavaScript(上)", "你不知道的 JavaScript(中)", "你不知道的 JavaScript(下)" ] ).select( "author, updateAt, createAt" ).limit( 200 ).sort( { author: -1 } ).exec( ( err, result ) => {
   console.log( result );
 } );
